@@ -2,6 +2,6 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Koushik25022005/simple-llm/blob/main/winequality-data.zip
+  source_URL: https://raw.githubusercontent.com/Koushik25022005/simple-llm/main/winequality-data.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
