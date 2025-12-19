@@ -1,0 +1,42 @@
+name: workflow
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+
+permissions:
+  id-tokens: write
+  contents: read
+
+jobs:
+  continous-integration:
+    name: Continous Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Linting Code
+        uses: echo "Linting Repository"
+
+      - name: Run unit tests
+        uses: echo "Running unit tests"
+
+  build-and-push-ecr-image:
+    name: Continous Delivery
+    needs: Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Utilities
+        run: !
+          sudo apt update
+          sudo apt-get install -y jq unzip
+
+      - name: Config AWS credentials
+
