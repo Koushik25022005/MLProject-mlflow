@@ -12,3 +12,10 @@
 9. Update the app.py
 
 
+### Dagshub
+MLFLOW_TRACKING_URI="https://dagshub.com/sripathikoushik244/MLProject-mlflow.mlflow"
+MLFLOW_TRACKING_USERNAME=sripathikoushik244
+MLFLOW_TRACKING_PASSWORD=7b130b0c5fe6cc004b637b8cea9c46d8d1470d2f
+python script.py
+
+
