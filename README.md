@@ -12,6 +12,3 @@
 9. Update the app.py
 
 
-### dagshub
-
-mlflow_tracking_uri=https://dagshub.com/sripathikoushik244/MLproject.mlflow
